@@ -113,9 +113,6 @@ func (e *ErrProtocolType) Recoverable() bool {
 }
 
 func (e *ErrProtocolType) Error() string {
-	fmt.Println("printing")
-	fmt.Println(e)
-
 	return fmt.Sprintf("unknown protocol type: %s", string(e.Type))
 }
 
